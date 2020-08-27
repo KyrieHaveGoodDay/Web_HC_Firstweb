@@ -1,0 +1,16 @@
+*{
+    /* m0+p0+bx+ff */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 微軟正黑體;
+    
+}
+#banner{
+    /*適應螢幕寬度*/
+    width: 100%;
+    /*適應螢幕高度*/
+    height: 100vh;
+    background-image: url(./img/coffee.jpg);
+    background-size: cover;
+}
