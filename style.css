@@ -43,7 +43,7 @@
 #banner a:hover{
     color: #aaa;
 }
-hr{
+#banner hr{
     width: 350px;
     margin: 0 auto;
 }
@@ -66,6 +66,72 @@ hr{
 }
 
 #news{
-    height:700px;
+    height:650px;
     color: #ccc;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* border:5px #FFAC55 solid; */
+    padding-top: 50px;
+}
+/* 兩個最新消息資訊 */
+#card1{
+    width: 550px;
+    height: 550px;
+    
+    margin: 0 auto;
+    margin-right: 30px;
+    /* border:5px #FFAC55 solid; */
+}
+#card2{
+    width: 550px;
+    height: 550px;
+    
+    margin: 0 auto;
+    margin-left: 30px;
+    /* border:5px #FFAC55 solid; */
+}
+
+#card1 img ,#card2 img{
+    width: 100%;
+    height: 260px;
+}
+#card1 p ,#card2 p{
+    
+    color:#000000;
+    margin: 15px 0;
+    
+}
+
+#card1 h4, #card2 h4 {
+    font-size: 14px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+
+section hr{
+    width: 150px;
+    margin: 0 auto;
+}
+
+
+#card1 h2 ,#card2 h2{
+    font-size: 30px;
+    color: #000000;
+    text-align: center;
+    
+}
+
+#card1 button ,#card2 button{
+    width: 150px;
+    height: 50px;
+    color: black;
+    background-color:white ;
+    border: 2px #ADADAD solid;
+    position:relative;
+    left:200px;
+}
+#card1 button:hover ,#card2 button:hover{
+    color:#8E8E8E;
 }
