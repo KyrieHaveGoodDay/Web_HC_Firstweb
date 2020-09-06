@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 微軟正黑體;
+    color: #ccc;
     
 }
 #banner{
@@ -67,7 +68,7 @@
 
 #news{
     height:650px;
-    color: #ccc;
+    
     display: grid;
     grid-template-columns: 50% 50%;
     /* border:5px #FFAC55 solid; */
@@ -134,4 +135,72 @@ section hr{
 }
 #card1 button:hover ,#card2 button:hover{
     color:#8E8E8E;
+}
+
+#bonjour{
+    width: 100%;
+    height: 200px;
+    background-image: url(./img/coffee4.jpg);
+    background-position:center;
+    text-align: center;
+    padding-top: 50px;
+    background-attachment: fixed;
+    
+}
+
+#bonjour h4{
+    color:#eee;
+}
+#bonjour hr{
+    width: 600px;
+    margin: 10px auto;
+
+}
+#bonjour h2{
+    font-size: 30px;
+    color: white;
+}
+
+#love{
+    text-align: center;
+    
+}
+#love h4{
+    margin-top: 100px;
+    color: #4F4F4F;
+}
+#love h2{
+    color: #4F4F4F;
+}
+#love hr{
+    width: 650px;
+    margin: 10px auto;
+}
+
+/* #product{
+     display: grid;
+    grid-template-columns: 25% 25% ;
+   
+    margin-top: 50px;
+    margin-left: 500px;
+    
+    
+} */
+#product{
+    display: grid;
+    grid-template-columns: 25% 25%  25% 25%;
+    margin-left: 110px;
+    padding: 30px;
+}
+#product img{
+    width: 300px;
+}
+
+#footer{
+    width: 100%;
+    height: 150px;
+    background-color: #eee;
+    color:#3C3C3C;
+    text-align: center;
+    margin-top: 70px;
 }
