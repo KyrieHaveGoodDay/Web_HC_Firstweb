@@ -140,7 +140,8 @@ section hr{
 #bonjour{
     width: 100%;
     height: 200px;
-    background-image: url(./img/coffee4.jpg);
+    background-image: url(./img/coffee9.jpg);
+    background-repeat: no-repeat;
     background-position:center;
     text-align: center;
     padding-top: 50px;
@@ -194,6 +195,7 @@ section hr{
 }
 #product img{
     width: 300px;
+    height: 200px;
 }
 
 #footer{
