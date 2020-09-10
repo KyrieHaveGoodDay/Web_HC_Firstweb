@@ -25,14 +25,14 @@ body {
 }
 
 /* 標題列 */
-#banner nav , #banner-about nav{
+#banner nav , #banner-about nav ,#banner-contact nav{
     padding: 30px 0;
     
     
     
 }
 /* 標題列裡面的a元素 */
-#banner a , #banner-about a{
+#banner a , #banner-about a , #banner-contact a{
     color: white;
     padding: 0 30px;
     font-size: 24px;
@@ -45,7 +45,7 @@ body {
 
 }
 /* hover=滑鼠碰到會發生的事情 */
-#banner a:hover , #banner-about a:hover{
+#banner a:hover , #banner-about a:hover , #banner-contact a:hover{
     color: #aaa;
 }
 #banner hr ,  #banner-about hr{
@@ -237,7 +237,7 @@ footer p{
 }
 
 /* 關於我 */
-#banner-about{
+#banner-about , #banner-contact{
     /*適應螢幕寬度*/
     width: 100%;
     /*適應螢幕高度*/
@@ -252,10 +252,10 @@ footer p{
     
     
 }
-#banner-about nav{
+#banner-about nav,#banner-contact nav{
     backdrop-filter: opacity(70%);
 }
-#banner-about h2{
+#banner-about h2 , #banner-contact h2{
     text-align: center;
     font-size: 36px;
     font-weight: 100;
@@ -277,6 +277,7 @@ footer p{
 #about-content h5{
     color: black;
     font-size: 18px;
+    padding-top: 20px;
     margin-bottom: 10px;
 }
 
@@ -303,8 +304,8 @@ footer p{
     background-image: url(./img/about-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 0 25px;
-    background-position: 80px 80px;
+    margin: 0 20px;
+    /* background-position: 80px 80px; */
     
 }
 #about-content #content-2{
@@ -322,5 +323,16 @@ footer p{
     margin: 0 25px;
 }
 
+/* 表單 */
+#font-deta{
+    background: #f6f6f6;
+    width: 700px;
+    height: 500px;
+    padding: 30px;
+    margin: 50px auto ;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 10px rgb(0,0,0,0.3)
+    
+}
 
-
+label for[name]
