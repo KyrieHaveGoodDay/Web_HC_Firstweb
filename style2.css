@@ -327,12 +327,30 @@ footer p{
 #font-deta{
     background: #f6f6f6;
     width: 700px;
-    height: 500px;
+    height: 350px;
     padding: 30px;
     margin: 50px auto ;
     margin-bottom: 40px;
     box-shadow: 0 5px 10px rgb(0,0,0,0.3)
     
 }
+#font-deta label[for=name],#font-deta label[for=email],#font-deta label[for=message]{
+    color: black;
+    
+}
+#font-deta input[type=text],#font-deta input[type=email]{
+    width: 100%;
+    padding: 5px;
+  /*每個元素之間的距離*/
+  margin: 5px 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: black;
+}
 
-label for[name]
+#button{
+    text-align: center;
+    margin-top: 20px;
+}
+#button input[type=reset],#button input[type=submit] {
+    color: black;
+}
