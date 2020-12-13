@@ -23,13 +23,19 @@ body {
     background-attachment: fixed;
     
 }
+@media screen and (max-width:767px){
+    #banner{
+        width: 100%;
+        height: 300px;
+        background-size: 100% 300px;
+        background-repeat: no-repeat;
+    }
+}
+
 
 /* 標題列 */
 #banner nav , #banner-about nav ,#banner-contact nav{
     padding: 30px 0;
-    
-    
-    
 }
 /* 標題列裡面的a元素 */
 #banner a , #banner-about a , #banner-contact a{
@@ -40,10 +46,14 @@ body {
     text-decoration: none;
     transition: 0.3s;
    
-    
-    
-
 }
+@media screen and (max-width:767px){
+    #banner a{
+        font-size: 12px;
+        padding: 0 15px;
+    }
+}
+
 /* hover=滑鼠碰到會發生的事情 */
 #banner a:hover , #banner-about a:hover , #banner-contact a:hover{
     color: #aaa;
@@ -61,6 +71,12 @@ body {
     transition: 0.3s;
     
 }
+@media screen and (max-width:767px){
+    #banner p{
+        font-size: 10px;
+        margin-top: 50px;
+    }
+}
 /* 這裡滑入不能設定白色 字體本身就是白色，設定白色會沒反應 */
 #banner p:hover{
     color: cornflowerblue;
@@ -68,6 +84,11 @@ body {
 #banner h1{
     text-align: center;
     font-size: 80px;
+}
+@media screen and (max-width:767px){
+    #banner h1{
+        font-size: 40px;
+    }
 }
 
 /* 最新消息 */
