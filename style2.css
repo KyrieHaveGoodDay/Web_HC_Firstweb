@@ -74,13 +74,17 @@ body {
 #news{
     width: 1200px;
     margin: 0 auto;
-    height: 100vh;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* 格限間隙 */
     grid-gap: 50px;
     text-align: center;
     padding: 100px 0;
+   
+}
+.new-box{
+    height: 700px;
 }
 #news > div {
     background: #fff;
@@ -120,6 +124,8 @@ a.button:hover{
     color: white;
     background: #aaa;
 }
+
+
 #news #news-left{
     height: 350px;
     background-image: url(./img/coffee1-1.jpg);
