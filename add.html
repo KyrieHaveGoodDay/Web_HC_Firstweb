@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">照片</label>
+    <input  type="text" id="addimg"><br>
+    <label for="">文字1</label>
+    <input  type="text" id="text1"><br>
+    <label for="">文字2</label>
+    <input  type="text" id="text2"><br>
+    <input type="button" id="adding" value="上傳">
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyAk0jqX_0byVI8ZsRaYIKTGZ5el-NCG7Sg",
+            authDomain: "project-41f96.firebaseapp.com",
+            databaseURL: "https://project-41f96-default-rtdb.firebaseio.com",
+            projectId: "project-41f96",
+            storageBucket: "project-41f96.appspot.com",
+            messagingSenderId: "256382762508",
+            appId: "1:256382762508:web:d5b8ae68840044bef87829",
+            measurementId: "G-7WWC8RNV6W"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        
+        
+        var adding = document.getElementById('adding');
+
+        var todos = firebase.database().ref('photo');
+       
+        adding.addEventListener('click', function () {
+            var addimg = document.getElementById('addimg').value;
+            var text1 = document.getElementById('text1').value;
+            var text2 = document.getElementById('text2').value;
+            
+            todos.push({ 
+                img: addimg ,
+                text1: text1,
+                text2:text2
+            });
+        })
+    </script>
+</body>
+
+</html>
